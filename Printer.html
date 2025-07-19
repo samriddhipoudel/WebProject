@@ -1,0 +1,107 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Epson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <style>
+        body {
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Using divison for navigation,logo and image--->
+    <div class="menu">
+        <div class="container">
+            <div class="logo">
+                <img src="image/logo.png" width="140px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Printer.html">Home</a></li>
+                    <li><a href="index.html">Product</a></li>
+                    <li><a href="blog (1).html">Blog</a></li>
+                    <li><a href="rsearch.html">Research</a></li>
+                    <li><a href="About US.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Using Div for writing paragraph about our website printer-->
+        <div class="section">
+            <div class="colspan">
+                <h1> Welcome To Epson Brand<br> Choose Your Best!</h1>
+                <p> A place abundant with budget-friendly and user-friendly as<br>
+                    well as high quality printers. Elevate your printing experience<br>
+                    along the way using our devices. Also enjoy some of our sales <br>
+                    and warranties along with festival offers.Embrace the wireless era <br>
+                    and use our printers, which are now available for printing from smart-<br>
+                    phones and tablets.
+                </p>
+                <!--Using inline css For shop now box-->
+                <a href="" class="now">Shop Now</a>
+                <style type="text/css">
+                    .now {
+                        display: inline-block;
+                        background: #000;
+                        color: #fff;
+                        padding: 8px 30px;
+                        margin: 30px 0;
+                        border-radius: 30px;
+                        transition: background 0.5;
+                    }
+
+                    .now:hover {
+                        background: red;
+                    }
+                </style>
+            </div>
+            <figure>
+                <!--Using div tag for displaying image website-->
+                <div class="colspan">
+                    <img src="image/c46b9aa029ccfe0467ee01cfd5c2d627.png">
+                </div>
+            </figure>
+            <!--footer-->
+            <div style="position: fixed;bottom: 0; width: 100% ;min-height:50px;
+            background-color: gray;padding: 20px; text-align: center;">
+                <span style="color: black; font-size: 10px;"> <p> &copy; Epson. All rights reserved.<br> coursework 2024</p></span>
+
+            </div>
+        </div>
+    </div>
+    <!--Using html for displaying cookies on webpage-->
+    <div id="cookie-consent">
+        <p>This website uses cookies to ensure you get the best experience on our website. <button
+                id="accept-cookies">Accept</button> <button id="decline-cookies">Decline</button></p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('accept-cookies').addEventListener('click', function () {
+        document.getElementById('cookie-consent').style.display = 'none';
+        // Set a cookie to indicate that the user has accepted cookies
+        document.cookie = 'cookies_accepted=true; expires=Thu, 31 Dec 2050 23:59:59 UTC; path=/';
+    });
+
+    document.getElementById('decline-cookies').addEventListener('click', function () {
+        document.getElementById('cookie-consent').style.display = 'none';
+        // Set a cookie to indicate that the user has declined cookies
+        document.cookie = 'cookies_declined=true; expires=Thu, 31 Dec 2030 23:59:59 UTC; path=/';
+    });
+
+    // Check if the user has previously accepted or declined cookies
+    if (document.cookie.indexOf('cookies_accepted=true') !== -1 || document.cookie.indexOf('cookies_declined=true') !== -1) {
+        document.getElementById('cookie-consent').style.display = 'none';
+    } else {
+        document.getElementById('cookie-consent').style.display = 'block';
+    }
+});
+    </script>
+</body>
+</html>

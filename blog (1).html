@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Art.Design Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/Style.css">
+    </head><style>
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+}
+img{
+    width: 361px;
+    height: 100%;
+    display: block;
+}
+.index{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: grey;
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.title {
+    text-align: center;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+    
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+
+
+.blog-img span:active {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.blog-item {
+    box-shadow: #3c393d;
+}
+.image {
+    height:250px;
+    width: 250px;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+
+/* @media screen and (min-width: 540px){ */
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* @media screen and (min-width: 768px){ */
+    .navbar .index{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+
+/* media screen and (min-width: 992px){@ */
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+
+
+/* @media screen and (min-width: 1200px){ */
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="menu">
+        <div class="container">
+            <div class="logo">
+                <img src="image/logo.png" style= "width:140px;">
+            </div>
+            <nav>
+                <ul>
+                  <li><a href="Printer.html">Home</a></li>
+                  <li><a href="index.html">Product</a></li>
+                  <li><a href="blog (1).html">Blog</a></li>
+                  <li><a href="rsearch.html">Research</a></li>
+                  <li><a href="About US.html">About Us</a></li>
+                </ul> 
+            </nav>
+        </div>
+      </header>
+      <p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+      <div class = "banner">
+        <div class = "index">
+          <h1 class = "banner-title">
+            <span>Epson.</span> Printer Blog
+          </h1>
+          <p>everything that you want to know about Epson printers</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="search the feed . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+
+    <section class = "blog" id = "blog">
+      <div class = "index">
+        <div class = "title">
+          <h2>Latest Blog</h2>
+          <p>recent blogs about Epson Printers</p>
+        </div>
+        <div class = "blog-content">
+
+
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <div class="image"><img src = "image/blog1.jpg" alt = "" height="250px" width="250px"></div>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <span>16 January, 2024</span>
+              <h2>Epson's new 17-inch photo printer sings the blues</h2>
+              <p>t's been a while since we’ve welcomed a new large-format photo printer... </p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+
+
+          <div class = "blog-item">
+            <div class = "blog-img">
+                <div class="image"><img src = "image/blog2.jpg" alt = ""></div>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <span>2 January, 2020</span>
+              <h2>Epson Introduces Entry Level Garment Printer</h2>
+              <p>Epson released a entry-level direct-to-garment (DTG) printer that can print directly onto dark, as well as light, fabrics...</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          
+          <div class = "blog-item">
+            <div class = "blog-img">
+                <div class="image"><img src = "image/blog3.jpg" alt = ""></div>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <span>19 December, 2023</span>
+              <h2>Two new inkjet Workforce Pro printers from Epson</h2>
+              <p>Epson has launched two new mono WorkForce Pro inkjet printers, the single function WorkForce Pro WF-M5399 and multifunction WF-M5899.</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          
+          <div class = "blog-item">
+            <div class = "blog-img">
+                <div class="image"><img src = "image/blog4.jpg" alt = ""></div>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <span>10 December, 2023</span>
+              <h2>Epson to introduce new minilab photo printer & DTF at ISA </h2>
+              <p>Epson will showcase its full line of textile, signage and aqueous printers at the ISA 2023 show in Las Vegas (12-14 April) and...</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          
+          <div class = "blog-item">
+            <div class = "blog-img">
+                <div class="image"><img src = "image/blog5.jpg" alt = ""></div>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Epson launches new large format SureColor P6070, P7070, P8070 and P9070 printers</h2>
+              <p>In its most significant launch this year Epson has announced its new SureColor SC-P6070, SureColor SC-P7070, SureColor SC-P8070 and SureColor SC-P9070 ...</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+         
+          <div class = "blog-item">
+            <div class = "blog-img">
+                <div class="image"><img src = "image/blog6.jpeg" alt = ""></div>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Epson releases SureColor P5360 17" (432mm) professional photographic printer</h2>
+              <p>Taking over from the SC P5070 printer, the new SureColor P5360 aims to empower photographers to produce the finest exhibition ...</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+    </section>
+   
+    </body>
+    <div style="position: fixed;bottom: 0; width: 100% ;min-height:50px;
+            background-color: gray;padding: 20px; text-align: center;">
+                <span style="color: black; font-size: 10px;"> <p> &copy; Epson. All rights reserved.<br> coursework 2024</p></span>
+
+            </div>
+
+</html>

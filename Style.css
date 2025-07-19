@@ -1,0 +1,109 @@
+.container {
+    background-color: rgb(1, 1, 15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 5px;
+}
+.nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+}
+/*css for creating cookies js*/
+#cookie-consent {
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #cookie-consent p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  #cookie-consent button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  
+  #cookie-consent button:hover {
+    background-color: #0062cc;
+  }
+
+a {
+    text-decoration: none;
+    color: rgb(241, 233, 233);
+}
+
+nav ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #db3434;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover ::after {
+    width: 100%;
+}
+p {
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.colspan {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.colspan img {
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.now{
+    display:inline-block;
+    background: #000;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
